@@ -678,7 +678,7 @@ header {
     padding-top:4px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     /* CABEÇALHO */
     header .mySlides .overlay .overlayy .overlayyy {
         height: 600px;
