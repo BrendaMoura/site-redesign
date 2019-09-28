@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lixo</title>
+    <meta charset="utf-8">
+</head>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+<body>
+    <!-- MENU INICIAL -->
+    <nav id="menuHeader" class="corMenu">
+        <input type="checkbox" id="toggle">
+        <label id="hamburger" for="toggle"></label>
+        <img id="logo" src="imagem/fmm.png"/>
+        <div class="box">
+            <a href="#principal" id="opcao" >Principal</a>
+            <a href="#aluno" id="opcao">Alunos</a>
+            <a href="#curso" id="opcao">Cursos</a>
+            <a href="#doacao" id="opcao">Doações</a>
+            <a href="#fale" id="opcao">Fale conosco</a>
+        </div>
+    </nav>
+
+
+    <!--HEADER  -->
+    <header id="principalSlider" class="principal">
+        <!--350px-->
+        <!--TESTE PARA FULL WIDTH E TXT"-->
+        <!--aqui fica a imagem de fundo-->
+        <div class="mySlides" id="imgDiv">
+            <!--aqui fica o degrade-->
+            <div class="overlay"></div>
+            <div class="divt">
+                <h1>Asas aos que querem voar</h1>
+                <p>A Fundação Matias Machline possibilita que diversas pessoas tenham boas oportunidades</p>
+            </div>
+        </div>
+
+        <!--aqui fica a imagem de fundo-->
+        <div class="mySlides" id="imgDiv2">
+            <!--aqui fica o degrade-->
+            <div class="overlay"></div>
+            <div class="divt">
+                <h1>Liberdade, igualdade e fraternidade</h1>
+                <p>O ser humano necessita de tais valores para viver bem em sociedade</p>
+            </div>
+        </div>
+    </header>
+
+    <div id="aluno" class="aluno">
+        <div class="filhaa" id="item">
+            <img src="imagem/p1.jpg" class="img">
+            <br>
+            <p class="alunotxt">Eu sou o Paulo e quero ser engenheiro civil para que assim eu possa ajuda em...</p>
+        </div>
+        <div class="filhab" id="item">
+            <img src="imagem/p2.jpg" class="img">
+            <br>
+            <p class="alunotxt">Eu sou a Ana e quero ser engenheira da computação para que assim eu possa ajuda em...</p>
+        </div>
+        <div class="filhac" id="item">
+            <img src="imagem/p3.jpg" class="img">
+            <br>
+            <p class="alunotxt">Eu sou o Mário e quero ser design para que assim eu possa ajuda em...</p>
+        </div>
+        <div class="filhad" id="item">
+            <img src="imagem/p4.jpg" class="img">
+            <br>
+            <p class="alunotxt">Eu sou a Eduarda e quero ser engenheira civil para que assim eu possa ajuda em...</p>
+        </div>
+    </div>
+
+    <div class="tituloValores">
+        <p>Valores</p>
+    </div>
+    <!-- aqui fica os valores -->
+    <div class="valores_main">
+        <div class="valores">
+            <div class="bolinha">
+                <p id="bolinhatxt">fraternidade</p>
+            </div>
+            <div class="bolinha">
+                <p id="bolinhatxt">Lealdade</p>
+            </div>
+            <div class="bolinha">
+                <p id="bolinhatxt">Companherismo</p>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="principalFundacao">
+        <!--aqui fica a imagem de fundo-->
+        <div class="fundacao" id="imgDiv3">
+            <!--aqui fica o degrade-->
+            <div class="overlayy"></div>
+            <div class="divimg">
+                <img src="imagem/p.jpg" class="img2" style="width: 110%">
+            </div>
+            <div class="divt2">
+                <h1>Fundação Matias Machline</h1>
+                <p>A Fundação Matias Machline, com 32 anos de existência, é o maior PROJETO SOCIAL sem fins lucrativos da Região Norte e um dos maiores do Brasil. O seu objetivo principal é desenvolver a sociedade por meio da EDUCAÇÃO, transformando a vida
+                    de muitos jovens</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- aqui fica o grafico -->
+    <div class="principalGrafico lixinho" id="pie"></div>
+
+    <div class="principal">
+        <!--350px-->
+        <!--TESTE PARA FULL WIDTH E TXT"-->
+        <!--aqui fica a imagem de fundo-->
+        <div class="coisa" id="imgDiv4">
+            <!--aqui fica o degrade-->
+            <div class="overlayyy"></div>
+            <div class="texto">
+                <div class="fale" style="color: white;">
+                    <h4 class="titulo">Fale conosco</h4>
+                    <p style="font-size: 25px;">Escreva sugestões, dúvidas, dívidas e qualquer outra coisa boa que desejar</p>
+                </div>
+                <form class="appointment-form">
+                    <!--Essa div guarda as outras divs; usa flex;-->
+                    <div class="foraform">
+                        <!--Cada um desses divs guarda um campo-->
+                        <div class="form-group">
+                            <input type="text" name="Fnome" class="form-control" placeholder="Primeiro nome">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="Lnome" class="form-control" placeholder="Último nome">
+                        </div>
+                    </div>
+                    <div class="foraform">
+                        <div class="form-group">
+                            <input type="text" name="Email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="contato" class="form-control" placeholder="Contato">
+                        </div>
+
+                    </div>
+                    <div class="foraform" style="margin-top: 10%;">
+                        <input type="submit" value="Enviar" class="btn btn-primary">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="principal" id="footer">
+        <div class="p1" style="margin-top: 20px;">
+            <img src="imagem/f.png" id="imagem">
+            <img src="imagem/w.png" id="imagem">
+            <img src="imagem/i.png" id="imagem">
+        </div>
+        <div class="p3">
+            <h1>Asas aos que querem voar.</h1><br>
+            <h2>Ajude a transformar o FUTURO de jovens carentes.</h2>
+        </div>
+        <div class="p1">
+            <div class="p2">Email: lucetcc559@gmail.com</div>
+            <div class="p2">Contato: (092) 99999-9999</div>
+            <div class="p2">Endereço: Av. Ministro Mário Andreazza, 916 Distrito Industrial | CEP 69075 830 Manaus | AM | Brasil</div>
+        </div>
+        <hr style="width: 100%; height:1px;" />
+        <div class="p1 nome">
+            <div class="p2">Anny Karoline</div>
+            <div class="p2">Brenda Moura</div>
+            <div class="p2">Euclides Lins</div>
+            <div class="p2">Turma: 3º BI</div>
+        </div>
+    </div>
+    
+    <script
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous">
+      </script>
+      <script src="js/main.js"></script>
+      <script type="text/javascript" src="js/barra3.js"></script>
+
+
+</body>
+
+</html>

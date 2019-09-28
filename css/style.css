@@ -1,0 +1,822 @@
+:root {
+    --azul: #00678c;
+    --verde: #a6ce39;
+    --laranja: #fd5f00;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+#bolinhatxt {
+    margin-top: 50%;
+    font-size: 30px;
+    color: var(--azul);
+}
+
+
+/* NAVEGAÇÃO */
+
+nav {
+    display: flex !important;
+    justify-content: right !important;
+    align-items: right;
+    width: 100%;
+    transition: all .8s fadeInOpacity linear;
+    padding-top:14px;
+    padding-bottom: 16px;
+    flex-direction:row;
+}
+
+
+
+#opcao {
+    float: right;
+    list-style-type: none;
+    display: block;
+    color: var(--azul);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#opcao:hover {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* DIV DOS ALUNOS */
+
+.aluno {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50%;
+}
+
+.aluno div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* SEÇÃO VALORES */
+
+.valores_main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70%;
+}
+
+.valores {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* CODIGO DA BRENDA */
+
+.principal {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+
+.imagem {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+#item {
+    flex: 1;
+    text-align: center;
+    font-size: 1.5em;
+    width: 25%;
+    height: 100%;
+}
+
+.filhaa {
+    padding-top: 10px;
+    background-color: var(--verde);
+}
+
+.filhab {
+    padding-top: 10px;
+    background-color: var(--azul);
+}
+
+.filhac {
+    padding-top: 10px;
+    background-color: var(--verde);
+}
+
+.filhad {
+    padding-top: 10px;
+    background-color: var(--azul);
+}
+
+
+/*Essa parte começa a ajeitar a fonte da parte do aluno*/
+
+.alunotxt {
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+/*Essa parte termina a ajeitar a fonte da parte do aluno*/
+
+.img {
+    justify-content: center !important;
+    height: 50%;
+    width: 70%;
+    border-radius: 100px;
+}
+
+#imagemm {
+    width: 10%;
+    height: 50%;
+}
+
+#logo {
+    position: absolute;
+    padding: 14px 16px;
+    left: 10px;
+}
+
+.corMenu {
+    background-color: var(--verde);
+}
+
+.menu-fixo {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    transition: all .8s fadeInOpacity linear;
+    background-color: white;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*Lixo do slider*/
+
+.mySlides {
+    display: none;
+    background-color: var(--verde);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.titulo {
+    margin-bottom: 1.5rem !important;
+    margin-top: 20px;
+}
+
+.fale {
+    display: flex;
+    font-size: 30px;
+    font-weight: 50;
+    width: 100%;
+    align-items: center;
+}
+
+.contato {
+    display: flex;
+}
+
+.texto {
+    margin-top: 5%;
+    position: relative;
+    left: 55%;
+    width: 35%;
+    height: 100%;
+    justify-content: center !important;
+    align-items: center;
+    text-align: center;
+}
+
+
+/*Teste de estilo da form*/
+
+.foraform {
+    justify-content: center !important;
+    width: 100%;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+.form-group input {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    width: 95%;
+    background: rgba(245, 234, 234) !important;
+    border: none;
+    color: rgba(245, 234, 234) !important;
+    font-size: 16px;
+    margin-bottom: 1.5rem !important;
+}
+
+.appointment-form .form-group {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.appointment-form .form-control {
+    border: transparent !important;
+    border-bottom: 1px solid rgba(245, 234, 234) !important;
+    height: 58px !important;
+    padding-left: 0;
+    padding-right: 0;
+    background: transparent !important;
+    color: rgb(245, 234, 234) !important;
+    font-size: 16px;
+    border-radius: 0px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+
+/*Termino de estilo da form*/
+
+
+/*Exemplo de botao enviar*/
+
+.btn {
+    cursor: pointer;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    border-radius: 40px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    width: 80%;
+    color: #f8f8f8;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    outline: none;
+}
+
+.btn.btn-primary {
+    background: var(--azul);
+    border: 1px solid #00678c;
+}
+
+.btn.btn-primary:hover {
+    border: 1px solid #f8f9fa;
+    background: transparent;
+    color: #f8f8f8;
+}
+
+
+/*Final do exemplo do botao enviar*/
+
+
+/*Começo do teste de img como background da div*/
+
+#imgDiv {
+    background-image: url(../imagem/a.jpg);
+}
+
+#imgDiv2 {
+    background-image: url(../imagem/b.jpg);
+}
+
+#imgDiv3 {
+    background-image: url(../imagem/f3.jpeg);
+}
+
+#imgDiv4 {
+    background-image: url(../imagem/f4.jpg);
+}
+
+
+/*Termino do teste de img como background da div*/
+
+
+/*Comeco do teste para div do texto e o texto*/
+
+.divt {
+    margin-top: 20%;
+    margin-left: 10%;
+    width: 40%;
+    left: 5%;
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.divt p {
+    color: #f8f9fa;
+    font-size: 25px;
+}
+
+.divt h1 {
+    font-size: 40px;
+}
+
+
+/*Termino do teste para div do texto e o texto*/
+
+
+/*Comeco do teste para div da img e o texto*/
+
+.divimg {
+    width: 30%;
+    height: 100%;
+    left: 0%;
+    margin: 2%;
+    z-index: 1;
+}
+
+.img2 {
+    text-align: center;
+    margin: 0 auto;
+    height: 90%;
+    width: 70%;
+    border-radius: 5%;
+}
+
+.divtexto {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    margin-top: 15%;
+    text-align: center;
+    color: white;
+}
+
+.divtexto p {
+    font-size: 20px;
+}
+
+
+/*Termino do teste para div da img e o texto*/
+
+.principal .mySlides .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(45deg, #00678c 0%, #a6ce39 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0d1128', endColorstr='#fd6100', GradientType=1);
+    opacity: .5;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 100;
+}
+
+.justify-content-start {
+    -webkit-box-pack: start !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+}
+
+
+/*Comeco do teste para fzr a segunda parte que usa degrade no fundo*/
+
+.coisa {
+    display: flex;
+    background-color: var(--verde);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.principal .coisa .overlayy {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(45deg, #00678c 0%, #a6ce39 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0d1128', endColorstr='#fd6100', GradientType=1);
+    opacity: .5;
+}
+
+.principal .coisa .overlayyy {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to right, #00678c, #a6ce39);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0d1128', endColorstr='#fd6100', GradientType=3);
+    opacity: .5;
+}
+
+.divt2 {
+    margin-top: 8%;
+    margin-left: 8%;
+    width: 40%;
+    left: 5%;
+    position: relative;
+    z-index: 1;
+    color: #00678c;
+}
+
+.divt2 p {
+    text-align: justify;
+    color: white;
+    font-size: 25px;
+}
+
+.divt2 h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+
+/*Termino do teste para fzr a segunda parte que usa degrade no fundo*/
+
+
+/*Comeco do teste para fzr o grafico*/
+
+.lixinho {
+    text-align: center;
+    justify-content: center !important;
+}
+
+
+/*Termino do teste para fzr o grafico*/
+
+#imagem {
+    margin: 10 auto;
+    height: 100%;
+    width: 9%;
+}
+
+#footer {
+    background: #343a40;
+    height: 60%;
+    display:flex;
+    flex-direction:column;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.p1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: calc(100%/3);
+}
+
+.p2 {
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+    height: 40%;
+}
+
+.p3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: calc(100%/5);
+}
+
+.contato {
+    display: grid;
+    grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+}
+
+.bolinha {
+    background-color: var(--verde);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 5%;
+    overflow: hidden;
+}
+
+.tituloValores {
+    text-align: center;
+    height: 20%;
+    width: 100%;
+    font-size: 35px;
+    color: var(--azul);
+    margin-top: 5%;
+}
+
+.valores {
+    height: 80%;
+    width: 100%;
+}
+
+#pie {
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+}
+
+
+/* GRAFICO */
+
+.principalGrafico {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+
+
+/* SOBRE A FUNDACAO */
+
+.principalFundacao {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+
+.fundacao {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.principalFundacao .fundacao .overlayy {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(45deg, #00678c 0%, #a6ce39 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0d1128', endColorstr='#fd6100', GradientType=1);
+    opacity: .5;
+}
+
+/* Slider */
+.principalSlider {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+.principalSlider .mySlides .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(45deg, #00678c 0%, #a6ce39 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0d1128', endColorstr='#fd6100', GradientType=1);
+    opacity: .5;
+}
+#toggle {
+	visibility: hidden;
+}
+
+.box{
+	display: flex;
+	flex-direction: row;
+	justify-content: top;
+    align-items: center;
+}
+#logo{
+	position: absolute;
+	left: 10px;
+    height: 40px;
+    padding-top:4px;
+}
+
+@media screen and (max-width: 768px) {
+    /* CABEÇALHO */
+    header .mySlides .overlay .overlayy .overlayyy {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+    /* BOLINHAS */
+    .valores_main {
+        height: auto;
+    }
+    /* SEÇÃO VALORES */
+    .valores {
+        flex-direction: column;
+    }
+    /* ALUNOS */
+    .aluno {
+        height: auto;
+        flex-direction: column;
+    }
+    .aluno div {
+        margin: 3%;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+    #item {
+        width: 90%;
+    }
+    /* GRAFICO */
+    .principalGrafico {
+        width: 100%;
+        height: auto;
+    }
+    #pie {
+        width: 100%;
+        height: 90vh;
+        justify-content: center;
+        flex-direction: column;
+    }
+    /* FALE CONOSCO */
+    .texto {
+        margin: auto;
+        left: 0;
+        width: 100%;
+    }
+    
+    /* SOBRE A FUNDACAO */
+    .fundacao {
+        height: auto;
+        flex-direction: column;
+    }
+    .divimg {
+        margin: auto;
+        width: 70%;
+        height: 40%;
+    }
+    .divt2 {
+        width: 70%;
+        margin: auto;
+        height: auto;
+    }
+    .principalFundacao {
+        height: auto;
+    }
+    .principalSlider {
+        height: 50%;
+    }
+    .divt p{
+        color: transparent;
+    }
+
+    /* MENU */
+    .box{
+        flex-direction: column;
+	    position: fixed;
+	    height: auto;
+	    top:50px;
+	    left: 0px;
+	    bottom: 0px;
+	    background-color: var(--verde);
+	    visibility: hidden;
+        
+    }
+    #logo{
+        position: static;
+        top:5px;
+        left: 10px;
+        height: 40px;
+    }
+    
+    #hamburger {
+        position: absolute;
+        background: #08C;
+        border: 1px solid rgba(0,0,0,.1);
+        border-radius: 100%;
+        color: white;
+        font-weight: bold;
+        top:10px;
+        left: 10px;
+        height:30px;
+        width: 30px;
+        background-image: url(../imagem/hamb.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: ease-in-out 0.5s ;
+    }
+    #opcao{
+        width:100%;
+        height:auto;
+    }
+    
+    #toggle:checked ~ .box{
+        visibility: visible;
+        
+    }
+    
+    #toggle:checked ~ #hamburger{
+        background-color: var(--verde);
+    
+    }
+    #footer{
+        height:auto;
+    }
+    #imagem {
+        margin:auto;
+        height: 10vh;
+        width: 40%;
+    }
+    .p1{
+        flex-direction: column;
+        height:auto;
+        width:100%;
+    }
+    .p2{
+        width:100%;
+        height:auto;
+    }
+    .p3{
+        height:auto;
+    }
+    
+    
+}
