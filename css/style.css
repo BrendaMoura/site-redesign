@@ -45,19 +45,24 @@ h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
-
-#bolinhatxt {
-    margin-top: 50%;
-    font-size: 30px;
-    color: var(--azul);
+ ::-webkit-input-placeholder {
+	 color: white;
 }
-
+::-moz-placeholder {
+	color: white; 
+}
+:-ms-input-placeholder {
+	color: white;
+}
+:-moz-placeholder {
+	color: white;
+}
 
 /* NAVEGAÇÃO */
 
 nav {
-    display: flex !important;
-    justify-content: right !important;
+    display: flex;
+    justify-content:center;
     align-items: right;
     width: 100%;
     transition: all .8s fadeInOpacity linear;
@@ -576,11 +581,6 @@ header {
     height: calc(100%/3);
 }
 
-.contato {
-    display: grid;
-    grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
-}
-
 .bolinha {
     background-color: var(--verde);
     width: 300px;
@@ -588,6 +588,10 @@ header {
     border-radius: 50%;
     margin: 5%;
     overflow: hidden;
+    line-height: 300px;
+    text-align: center;
+    font-size: 30px;
+    color: var(--azul);
 }
 
 .tituloValores {
